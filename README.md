@@ -1,4 +1,4 @@
-![kali-e1564418804434](https://user-images.githubusercontent.com/59718043/127959108-640d07a6-0dd1-4f97-9d5d-230b0a3cd4f3.png)
+![8-Easy-Steps-of-Installing-Kali-Linux-In-Raspberry-Pi](https://user-images.githubusercontent.com/59718043/127959484-6963449f-d823-4a26-b04c-3e8fa6d6e6e8.jpg)
 # Headless Kali Linux RPi Setup Guide
 A "headless" setup means any host on the network can remotely connect to a 
 headless client via SSH or VNC. This removes the need for peripherals to operate a server.  
