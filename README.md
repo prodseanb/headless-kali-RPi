@@ -1,6 +1,7 @@
+![kali-e1564418804434](https://user-images.githubusercontent.com/59718043/127959108-640d07a6-0dd1-4f97-9d5d-230b0a3cd4f3.png)
 # Headless Kali Linux RPi Setup Guide
 A "headless" setup means any host on the network can remotely connect to a 
-client via SSH or VNC. This removes the need for peripherals to operate a server.  
+headless client via SSH or VNC. This removes the need for peripherals to operate a server.  
 In this walkthrough, we will be setting up a remote Kali Linux setup on ARM architecture.
 (RPi 1, 2, 3, 4, 400, Zero, Zero W)
 ## Table of contents
