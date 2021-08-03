@@ -3,6 +3,13 @@ A "headless" setup means any host on the network can remotely connect to a
 client via SSH or VNC. This removes the need for peripherals to operate a server.  
 In this walkthrough, we will be setting up a remote Kali Linux setup on ARM architecture.
 (RPi 1, 2, 3, 4, 400, Zero, Zero W)
+## Table of contents
+- [Kali-ARM Installation](https://github.com/prodseanb/headless-kali-RPi#download-kali-arm-image)
+- [Booting into Kali](https://github.com/prodseanb/headless-kali-RPi#boot-into-your-raspberry-pi)
+- [OpenSSH Installation and Configuration](https://github.com/prodseanb/headless-kali-RPi#install-openssh-server)
+- [Wireless Network Configuration](https://github.com/prodseanb/headless-kali-RPi#configure-wireless-network-availability-on-boot)
+- [Auto-login Configuration](https://github.com/prodseanb/headless-kali-RPi#configure-auto-login)
+- [References](https://github.com/prodseanb/headless-kali-RPi#references)
 ## Download Kali-ARM image
 Initially, we need to download a Kali Linux image that is compatible with ARM architecture.<br/>
 - [Download Link](https://www.kali.org/get-kali/#kali-arm)
@@ -10,6 +17,7 @@ Initially, we need to download a Kali Linux image that is compatible with ARM ar
 ## Load the image into any image flasher
 For this step, we're going to use [Etcher](https://github.com/balena-io/etcher). Head over to [this
 repo](https://github.com/balena-io/etcher) and follow the guide to install and configure Etcher on your OS.
+<br/>
 <br/>
 ![BalenaEtcher_v1 5 97](https://user-images.githubusercontent.com/59718043/127945937-b0aac1e8-49a0-4ab9-82c9-909d6e0b60d3.png)
 - Make sure your chosen storage (SSD/Micro SD card) is inserted.
@@ -117,12 +125,9 @@ Change all occurences to this:
 autologin-user=kali
 autologin-user-timeout=0
 ```
-Also, find this line and uncomment:
+Find this line and uncomment:
 ```
 #pam-autologin-service=lightdm-autologin
-```
-```
-pam-autologin-service=lightdm-autologin
 ```
 You can also take a look at `lightdm.conf` in this repo, copy and paste everything to your
 own lightdm.conf file.
